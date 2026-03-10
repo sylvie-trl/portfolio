@@ -37,7 +37,7 @@ export const projects = [
     github: "https://github.com/sylvie-trl/vieuxGrimoire",
     demo: null,
 
-    image: "/images/grimoire.png",
+    image: "/images/projects/grimoire.png",
   },
   {
     id: "kasa",
@@ -126,6 +126,6 @@ export const projects = [
     ],
     github: "https://github.com/sylvie-trl/portfolio",
     demo: null,
-    image: "/images/portfolio.png",
+    image: "/images/projects/portfolio.png",
   },
 ];

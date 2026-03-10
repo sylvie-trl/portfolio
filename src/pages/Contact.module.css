@@ -1,0 +1,60 @@
+.contact {
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.label {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6e7669;
+}
+
+.title {
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.primaryLink,
+.secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primaryLink {
+  background: #323b2f;
+  color: #f7f4f2;
+}
+
+.primaryLink:hover {
+  opacity: 0.92;
+}
+
+.secondaryLink {
+  background: #ffffff;
+  color: #323b2f;
+  border: 1px solid #e5e0dc;
+}
+
+.secondaryLink:hover {
+  background: #ede9e6;
+}
