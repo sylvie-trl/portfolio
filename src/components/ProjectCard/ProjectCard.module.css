@@ -14,10 +14,24 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+.cardButton {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cardButton:focus-visible {
+  outline: 2px solid #323b2f;
+  outline-offset: 4px;
+  border-radius: 16px;
+}
+
 .image {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  display: block;
 }
 
 .content {
@@ -39,6 +53,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .tag {

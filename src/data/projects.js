@@ -37,7 +37,8 @@ export const projects = [
     github: "https://github.com/sylvie-trl/vieuxGrimoire",
     demo: null,
 
-    image: "/images/projects/grimoire.png",
+    image: "/images/projects/grimoire.webp",
+    alt: "Interface de la plateforme de notation de livres Mon Vieux Grimoire",
   },
   {
     id: "kasa",
@@ -67,7 +68,8 @@ export const projects = [
     ],
     github: "https://github.com/sylvie-trl/Kasa",
     demo: null,
-    image: "/images/projects/kasa.png",
+    image: "/images/projects/kasa.webp",
+    alt: "Interface de l'application Kasa affichant des annonces de logements",
   },
   {
     id: "camputech",
@@ -98,7 +100,8 @@ export const projects = [
     ],
     github: null,
     demo: "https://camputech.fr",
-    image: "/images/projects/camputech.png",
+    image: "/images/projects/camputech.webp",
+    alt: "Page d'accueil du site Camputech présentant des services de dépannage informatique",
   },
   {
     id: "portfolio",
@@ -126,6 +129,7 @@ export const projects = [
     ],
     github: "https://github.com/sylvie-trl/portfolio",
     demo: null,
-    image: "/images/projects/portfolio.png",
+    image: "/images/projects/portfolio.webp",
+    alt: "Aperçu du portfolio affiché sur un ordinateur portable",
   },
 ];
