@@ -22,12 +22,17 @@
   gap: 16px;
 }
 
-.links a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #323b2f;
+.icon {
+  width: 22px;
+  height: 22px;
+  color: #6e7669;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
-.links a:hover {
-  text-decoration: underline;
+.icon:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+  color: #323b2f;
 }
