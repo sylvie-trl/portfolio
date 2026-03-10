@@ -8,11 +8,17 @@ function Navbar() {
           Sylvie Trollé
         </a>
 
-        <div className={styles.links}>
-          <a href="#about">À propos</a>
-          <a href="#projects">Projets</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <ul className={styles.links}>
+          <li>
+            <a href="#about">À propos</a>
+          </li>
+          <li>
+            <a href="#projects">Projets</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

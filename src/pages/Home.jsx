@@ -4,14 +4,16 @@ function Home() {
   return (
     <section id="home" className={styles.hero}>
       <div className={styles.container}>
-        <p className={styles.label}>Portfolio</p>
+        <p className={styles.label} aria-hidden="true">
+          Portfolio
+        </p>
 
         <h1 className={styles.title}>Sylvie Trollé</h1>
 
-        <p className={styles.subtitle}>
+        <h2 className={styles.subtitle}>
           Développement web, produit et UX au service de projets numériques
           utiles
-        </p>
+        </h2>
 
         <p className={styles.description}>
           Formée au développement web, j’évolue à l’interface entre technique,

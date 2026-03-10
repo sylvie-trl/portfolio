@@ -20,7 +20,13 @@ function ProjectModal({ project, onClose }) {
 
   return (
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={styles.modal}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-title"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className={styles.close} onClick={onClose} aria-label="Fermer">
           ×
         </button>
@@ -32,17 +38,19 @@ function ProjectModal({ project, onClose }) {
           />
 
           <div className={styles.headerContent}>
-            <h3 className={styles.title}>{project.title}</h3>
+            <h3 id="project-title" className={styles.title}>
+              {project.title}
+            </h3>
 
             <p className={styles.description}>{project.description}</p>
 
-            <div className={styles.stack}>
+            <ul className={styles.stack}>
               {project.stack.map((tech) => (
-                <span key={tech} className={styles.tag}>
+                <li key={tech} className={styles.tag}>
                   {tech}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
@@ -80,12 +88,12 @@ function ProjectModal({ project, onClose }) {
 
         <div className={styles.links}>
           {project.github && (
-            <a href={project.github} target="_blank" rel="noreferrer">
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
               Voir le code
             </a>
           )}
           {project.demo && (
-            <a href={project.demo} target="_blank" rel="noreferrer">
+            <a href={project.demo} target="_blank" rel="noopener noreferrer">
               Voir la démo
             </a>
           )}

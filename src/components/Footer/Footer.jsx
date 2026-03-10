@@ -12,7 +12,7 @@ function Footer() {
           <a
             href="https://github.com/sylvie-trl"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
@@ -20,7 +20,7 @@ function Footer() {
           <a
             href="https://linkedin.com/in/sylvie-trl"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>

@@ -4,7 +4,9 @@ function About() {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
-        <p className={styles.label}>À propos</p>
+        <p className={styles.label} aria-hidden="true">
+          À propos
+        </p>
 
         <h2 className={styles.title}>
           Un profil à l'interface entre technique, produit et UX
@@ -35,9 +37,11 @@ function About() {
           </div>
         </div>
 
+        <h3 className={styles.skillsTitle}>Compétences</h3>
+
         <div className={styles.skills}>
           <div className={styles.skillBlock}>
-            <h3>Développement</h3>
+            <h4>Développement</h4>
             <ul>
               <li>React</li>
               <li>JavaScript</li>
@@ -49,7 +53,7 @@ function About() {
           </div>
 
           <div className={styles.skillBlock}>
-            <h3>Design / UX</h3>
+            <h4>Design / UX</h4>
             <ul>
               <li>Figma</li>
               <li>Maquettes d’interface</li>
@@ -59,7 +63,7 @@ function About() {
           </div>
 
           <div className={styles.skillBlock}>
-            <h3>Produit / Organisation</h3>
+            <h4>Produit / Organisation</h4>
             <ul>
               <li>Agile / Scrum</li>
               <li>User stories</li>
