@@ -1,0 +1,33 @@
+.footer {
+  padding: 32px 24px;
+  background: #f7f4f2;
+  border-top: 1px solid #e5e0dc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-size: 14px;
+  color: #6e7669;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #323b2f;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
