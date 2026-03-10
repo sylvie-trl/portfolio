@@ -14,8 +14,9 @@ function Home() {
         </p>
 
         <p className={styles.description}>
-          Formée au développement web, j’associe compréhension technique, sens
-          du produit et organisation de projet.
+          Formée au développement web, j’évolue à l’interface entre technique,
+          conception et organisation de projet, avec une attention particulière
+          portée aux usages et à la clarté des interfaces.
         </p>
 
         <div className={styles.actions}>
