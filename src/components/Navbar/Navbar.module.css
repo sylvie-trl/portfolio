@@ -1,0 +1,38 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(247, 244, 242, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e0dc;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #323b2f;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #6e7669;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: #323b2f;
+}
