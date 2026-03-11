@@ -128,7 +128,7 @@ export const projects = [
       "Améliorer encore l’accessibilité",
     ],
     github: "https://github.com/sylvie-trl/portfolio",
-    demo: null,
+    demo: "https://sylvie-trolle-portfolio.netlify.app/",
     image: "/images/projects/portfolio.webp",
     alt: "Aperçu du portfolio affiché sur un ordinateur portable",
   },
