@@ -37,7 +37,7 @@ export const projects = [
     github: "https://github.com/sylvie-trl/vieuxGrimoire",
     demo: null,
 
-    image: "/images/projects/grimoire.webp",
+    image: "/images/projects/vieuxgrimoire.webp",
     alt: "Interface de la plateforme de notation de livres Mon Vieux Grimoire",
   },
   {
