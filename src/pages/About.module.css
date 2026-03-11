@@ -41,7 +41,7 @@
   min-width: 240px;
 }
 
-.skillBlock h3 {
+.skillBlock h4 {
   margin: 0 0 16px;
   padding-bottom: 12px;
   font-size: 20px;
@@ -63,23 +63,23 @@
 }
 
 .skillBlock li + li {
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 @media (max-width: 767px) {
   .about {
-    padding: 80px 24px;
+    padding: 60px 24px;
   }
 
   .content {
-    margin-bottom: 72px;
+    margin-bottom: 30px;
   }
 
   .skills {
-    gap: 28px;
+    gap: 10px;
   }
 
-  .skillBlock h3 {
+  .skillBlock h4 {
     font-size: 18px;
   }
 

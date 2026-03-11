@@ -76,7 +76,11 @@
   background-color: #ede9e6;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 24px;
+  }
+
   .subtitle {
     font-size: 24px;
   }
