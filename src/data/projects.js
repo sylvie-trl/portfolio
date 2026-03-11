@@ -132,4 +132,34 @@ export const projects = [
     image: "/images/projects/portfolio.webp",
     alt: "Aperçu du portfolio affiché sur un ordinateur portable",
   },
+  {
+    id: "eloina",
+    title: "Les Cires d'Éloïna",
+    shortDescription:
+      "Site vitrine avec système de précommande de bougies : sélection des produits, calcul du total et envoi d’e-mails de confirmation.",
+    description:
+      "Site vitrine avec système de précommande permettant aux clients de sélectionner des bougies et réserver leur commande pour un marché artisanal.",
+    context:
+      "Ce site a été développé pour accompagner une activité artisanale de fabrication de bougies parfumées. L’objectif était de présenter les collections et de permettre aux clients de réserver leurs produits à l’avance pour un marché de Noël, afin de préparer les commandes et faciliter la récupération sur place.",
+    objectives: [
+      "Concevoir une logique de panier et de réservation côté client pour gérer la sélection des produits et les quantités",
+      "Mettre en place un calcul dynamique du montant total en fonction des produits sélectionnés",
+      "Développer un parcours de réservation simple, incluant l’envoi automatique d’e-mails de confirmation et de rappel",
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+    results: [
+      "Création d’un site vitrine présentant les collections de bougies artisanales",
+      "Développement d’un système de sélection de produits avec calcul automatique du montant de la commande",
+      "Mise en place d’un système de réservation afin de faciliter la préparation et l’organisation des commandes",
+    ],
+    improvements: [
+      "Ajout d’un back-end pour gérer les stocks",
+      "Mise en place d’une base de données pour les commandes",
+      "Interface d’administration pour suivre les réservations",
+    ],
+    github: null,
+    demo: "https://les-cires-deloina.com/",
+    image: "/images/projects/eloina.webp",
+    alt: "Aperçu du site les cires d'Eloïna affiché sur un ordinateur",
+  },
 ];
