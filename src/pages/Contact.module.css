@@ -112,13 +112,27 @@
 }
 
 .successMessage {
-  padding: 16px;
-  background: #f7f4f2;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #f7f4f2;
   color: #323b2f;
-  border-radius: 12px;
-  font-weight: 700;
-  margin-bottom: 32px;
+  border-radius: 8px;
   border: 1px solid #e5e0dc;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767px) {

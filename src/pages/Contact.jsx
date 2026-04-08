@@ -8,6 +8,8 @@ function Contact() {
     message: "",
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -16,7 +18,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulaire envoyé :", formData);
-    alert("Merci pour votre message !");
+    setIsSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -69,6 +71,12 @@ function Contact() {
           <button type="submit" className={styles.submitButton}>
             Envoyer le message
           </button>
+
+          {isSubmitted && (
+            <p className={styles.successMessage}>
+              Merci ! Votre message a bien été envoyé.
+            </p>
+          )}
         </form>
 
         <ul className={styles.links}>
