@@ -1,6 +1,25 @@
+import { useState } from "react";
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Formulaire envoyé :", formData);
+    alert("Merci pour votre message !");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <section id="contact" className={styles.contact}>
       <div className={styles.container}>
@@ -10,15 +29,49 @@ function Contact() {
 
         <h2 className={styles.title}>Échangeons autour de vos projets</h2>
 
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <div className={styles.inputGroup}>
+            <label htmlFor="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" className={styles.submitButton}>
+            Envoyer le message
+          </button>
+        </form>
+
         <ul className={styles.links}>
-          <li>
-            <a
-              href="mailto:sylvie.trl22@gmail.com"
-              className={styles.primaryLink}
-            >
-              M’écrire par email
-            </a>
-          </li>
           <li>
             <a
               href="https://github.com/sylvie-trl/"
