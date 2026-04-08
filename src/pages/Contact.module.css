@@ -22,6 +22,68 @@
   margin-bottom: 20px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #323b2f;
+  text-align: left;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 12px 16px;
+  border: 1px solid #e5e0dc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  background: #fcfbf9;
+  transition: border-color 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #323b2f;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+  background: #323b2f;
+  color: #f7f4f2;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +93,6 @@
   margin: 0;
 }
 
-.primaryLink,
 .secondaryLink {
   display: inline-flex;
   align-items: center;
@@ -41,18 +102,6 @@
   text-decoration: none;
   font-weight: 700;
   transition: 0.2s ease;
-}
-
-.primaryLink {
-  background: #323b2f;
-  color: #f7f4f2;
-}
-
-.primaryLink:hover {
-  opacity: 0.92;
-}
-
-.secondaryLink {
   background: #ffffff;
   color: #323b2f;
   border: 1px solid #e5e0dc;
@@ -62,28 +111,30 @@
   background: #ede9e6;
 }
 
-.submitButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 16px;
-  border-radius: 999px;
-  text-decoration: none;
+.successMessage {
+  padding: 16px;
+  background: #f7f4f2;
+  color: #323b2f;
+  border-radius: 12px;
   font-weight: 700;
-  transition: 0.2s ease;
-  background: #323b2f;
-  color: #f7f4f2;
-  border: none;
-  cursor: pointer;
-  width: fit-content;
-}
-
-.submitButton:hover {
-  opacity: 0.92;
+  margin-bottom: 32px;
+  border: 1px solid #e5e0dc;
 }
 
 @media (max-width: 767px) {
   .contact {
     padding: 60px 24px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
   }
 }
